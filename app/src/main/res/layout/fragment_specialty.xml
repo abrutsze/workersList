@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/vAvatarLogo"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_200"
+        android:layout_margin="@dimen/dp_5"
+        android:adjustViewBounds="true"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/vFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:maxLines="1"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vAvatarLogo"
+        tools:text="FirstName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/vLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:maxLines="1"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintStart_toEndOf="@+id/vFirstName"
+        app:layout_constraintTop_toTopOf="@+id/vFirstName"
+        tools:text="LastName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/vDateOfBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:maxLines="1"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vLastName"
+        tools:text="DateOfBirth" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/vAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:maxLines="1"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintStart_toEndOf="@+id/vDateOfBirth"
+        app:layout_constraintTop_toTopOf="@+id/vDateOfBirth"
+        tools:text="Age" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/vSpeciality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:maxLines="1"
+        android:text="@string/speciality"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vDateOfBirth" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSpeciality"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vSpeciality"
+        tools:listitem="@layout/item_speciality" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

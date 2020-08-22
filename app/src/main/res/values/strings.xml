@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestApplication</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="age">Возраст %1$d</string>
+    <string name="speciality">Специальность</string>
+    <string name="birthday">%1$s г.</string>
+    <string name="birthday_place_holder">««</string>
+</resources>
